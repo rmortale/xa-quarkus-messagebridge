@@ -1,5 +1,5 @@
 image:
-  tag: sha-f038b7a
+  tag: sha-0fc84fe
 
 envVars:
   K8SCC_ENV: DEVTUPDATE2
