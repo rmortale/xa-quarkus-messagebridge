@@ -1,1 +1,1 @@
-{ { include "helmet.app" . } }
+{{ include "helmet.app" . }}

@@ -5,6 +5,6 @@ envVars:
   K8SCC_ENV: DEVTUPDATE2
 
 ingress:
-  enabled: true
+  enabled: false
   hostname: devt.internal
 
