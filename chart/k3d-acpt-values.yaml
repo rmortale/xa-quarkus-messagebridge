@@ -1,0 +1,17 @@
+image:
+  tag: sha-f038b7a
+
+envVars:
+  K8SCC_ENV: ACPTUPDATE2
+
+ingress:
+  enabled: true
+  hostname: acpt.internal
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "1000Mi"
+  requests:
+    cpu: "200m"
+    memory: "500Mi"

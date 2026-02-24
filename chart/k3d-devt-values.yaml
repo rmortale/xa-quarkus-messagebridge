@@ -1,0 +1,10 @@
+image:
+  tag: sha-f038b7a
+
+envVars:
+  K8SCC_ENV: DEVTUPDATE2
+
+ingress:
+  enabled: true
+  hostname: devt.internal
+

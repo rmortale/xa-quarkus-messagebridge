@@ -1,0 +1,11 @@
+image:
+  registry: ghcr.io
+  repository: rmortale/xa-quarkus-messagebridge
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "1000Mi"
+  requests:
+    cpu: "200m"
+    memory: "500Mi"

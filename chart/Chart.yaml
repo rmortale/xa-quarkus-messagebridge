@@ -1,0 +1,15 @@
+apiVersion: v2
+name: xa-quarkus-messagebridge-chart
+description: A Helm chart for the Quarkus JMS message bridge
+
+type: application
+version: 0.1.0
+
+appVersion: "1.16.0"
+
+dependencies:
+  - name: helmet
+    version: 0.14.0
+    repository: https://charts.companyinfo.dev
+    import-values: # <== It is mandatory if you want to import the Helmet default values.
+      - defaults

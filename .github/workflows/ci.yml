@@ -58,13 +58,13 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-#      - name: update tags in helm values files
-#        run: |
-#          sed -i "s,tag:.*,tag:\ sha-${GITHUB_SHA::7}," k8s/chart/git-testing/k3d-devt-values.yaml
-#          sed -i "s,tag:.*,tag:\ sha-${GITHUB_SHA::7}," k8s/chart/git-testing/k3d-acpt-values.yaml
-#          sed -i "s,tag:.*,tag:\ sha-${GITHUB_SHA::7}," k8s/chart/git-testing/k3d-prod-values.yaml
-#          sed -i "s,appVersion:.*,appVersion:\ sha-${GITHUB_SHA::7}," k8s/chart/git-testing/Chart.yaml
-#
-#      - uses: EndBug/add-and-commit@v7
-#        with:
-#          default_author: github_actions
+      - name: update tags in helm values files
+        run: |
+          sed -i "s,tag:.*,tag:\ sha-${GITHUB_SHA::7}," chart/k3d-devt-values.yaml
+          sed -i "s,tag:.*,tag:\ sha-${GITHUB_SHA::7}," chart/k3d-acpt-values.yaml
+          sed -i "s,tag:.*,tag:\ sha-${GITHUB_SHA::7}," chart/k3d-prod-values.yaml
+          sed -i "s,appVersion:.*,appVersion:\ sha-${GITHUB_SHA::7}," chart/Chart.yaml
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
