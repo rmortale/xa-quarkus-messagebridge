@@ -1,5 +1,5 @@
 image:
-  tag: sha-3863882
+  tag: sha-69fe314
 
 envVars:
   K8SCC_ENV: ACPTUPDATE2
