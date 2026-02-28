@@ -5,7 +5,7 @@ description: A Helm chart for the Quarkus JMS message bridge
 type: application
 version: 0.1.0
 
-appVersion: sha-69fe314
+appVersion: sha-387f8ef
 
 dependencies:
   - name: helmet
